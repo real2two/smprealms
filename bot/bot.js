@@ -160,7 +160,7 @@ client.ws.on("INTERACTION_CREATE", async (event) => {
   }
 });
 
-client.login("ODA3Mjc0MzMxMDEyMzMzNjM5.YB1mzg.Z8riqrf23TNJT0tbWICnbDmAkPs");
+client.login("TOKEN HERE");
 
 /*
 async function test() {
