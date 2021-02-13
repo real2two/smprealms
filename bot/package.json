@@ -1,0 +1,14 @@
+{
+  "name": "smp-realms-bot",
+  "version": "0.0.1",
+  "description": "A Discord bot that creates a Minecraft SMP server per Discord guild.",
+  "main": "index.js",
+  "dependencies": {
+    "@keyv/sqlite": "^2.0.2",
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "keyv": "^4.0.3",
+    "node-fetch": "^2.6.1"
+  },
+  "author": "SMP Realms Developers"
+}

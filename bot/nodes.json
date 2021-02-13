@@ -1,0 +1,10 @@
+{
+    "1": {
+        "name": "Node Name",
+        "domain": "http://localhost",
+        "ip": "localhost",
+        "token": "code",
+        "maxcreatedservers": 100,
+        "maxrunningservers": 50
+    }
+}
