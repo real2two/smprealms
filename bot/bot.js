@@ -117,6 +117,8 @@ client.ws.on("INTERACTION_CREATE", async (event) => {
   //Reply function
   async function reply(messagestring, options = { type: 4, ephemeral: false }, editoriginal = false) {
     if (options == null) options = { type: 4, ephemeral: false };
+	  
+    if (options.type == 3) options.type = 4;
 
     if (typeof options.type != "number") throw new Error("Reply type must be a number")
     let url = editoriginal == true ? `https://discord.com/api/v8/webhooks/${client.user.id}/${event.token}/messages/@original` : `https://discord.com/api/v8/interactions/${event.id}/${event.token}/callback`
@@ -141,6 +143,8 @@ client.ws.on("INTERACTION_CREATE", async (event) => {
     } else {
       json = options
     }
+	  
+    json.data.allowed_mentions = false;
 
     if (editoriginal == true) {
       requests.patch(url, json).then((response) => {
