@@ -1,6 +1,5 @@
-// This file was specifically created to support past Dashactyl versions that used keyv.
+// This file was specifically created to support keyv.
 
-const settings = require("./settings.json");
 const db = require('better-sqlite3')("database.sqlite");
 
 db.prepare(`CREATE TABLE IF NOT EXISTS "keyv" ("key" VARCHAR(255) PRIMARY KEY, "value" TEXT)`).run();
